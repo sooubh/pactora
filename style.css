@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
-  --bg: #f8fafc;
+  --bg-rgb: 248 250 252;
+  --bg: rgb(var(--bg-rgb));
   --surface: #ffffff;
   --text: #0f172a;
   --muted: #475569;
@@ -49,7 +50,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(248, 250, 252, 0.96);
+  background: rgb(var(--bg-rgb) / 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }

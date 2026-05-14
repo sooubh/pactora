@@ -28,14 +28,3 @@ faqButtons.forEach((button) => {
     }
   });
 });
-
-window.addEventListener('resize', () => {
-  if (!navToggle || !navLinks) {
-    return;
-  }
-
-  if (window.innerWidth > 900) {
-    navLinks.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  }
-});
