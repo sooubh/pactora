@@ -27,59 +27,121 @@
       </div>
     </header>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <main class="container">
-      <section class="page-header">
+      <section class="page-header page-hero">
         <h1>Privacy Policy</h1>
         <p>This policy is based solely on Pactora’s documented app behavior.</p>
         <div class="notice">Last updated: Not specified in project files.</div>
+        <div class="page-meta">
+          <span class="pill">Offline-first</span>
+          <span class="pill">No accounts</span>
+          <span class="pill">Local-only data</span>
+        </div>
       </section>
 
-      <section class="page-content">
-        <h2>Summary</h2>
-        <p>Pactora is built with privacy-by-design principles. The app does not collect, store, or transmit personal data to a server.</p>
+      <div class="page-layout">
+        <aside class="toc">
+          <h2>On this page</h2>
+          <nav>
+            <a href="#summary">Summary</a>
+            <a href="#collection">Data collection</a>
+            <a href="#device-data">Data stored on your device</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#backups">Backups</a>
+            <a href="#ads">Advertising</a>
+            <a href="#children">Children’s privacy</a>
+            <a href="#changes">Policy changes</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
 
-        <h2>Data collection</h2>
-        <ul class="list">
-          <li>No account creation, login, or cloud sync is used.</li>
-          <li>No personal data is sent to Pactora’s servers because none exist for storage.</li>
-        </ul>
+        <section class="page-content">
+          <details id="summary" class="content-card" open>
+            <summary>Summary</summary>
+            <div>
+              <p>Pactora is built with privacy-by-design principles. The app does not collect, store, or transmit personal data to a server.</p>
+            </div>
+          </details>
 
-        <h2>Data stored on your device</h2>
-        <ul class="list">
-          <li>Commitments, people, and IOUs are stored locally in an Isar database.</li>
-          <li>Item photos and attachments are stored as local files on your device.</li>
-          <li>Deleting the app removes all local data permanently.</li>
-        </ul>
+          <details id="collection" class="content-card">
+            <summary>Data collection</summary>
+            <div>
+              <ul class="list">
+                <li>No account creation, login, or cloud sync is used.</li>
+                <li>No personal data is sent to Pactora’s servers because none exist for storage.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>Permissions</h2>
-        <ul class="list">
-          <li><strong>Notifications:</strong> Used to schedule local reminders for promises and return dates.</li>
-          <li><strong>Media/Photos:</strong> Used to attach item photos. Files stay on your device.</li>
-        </ul>
+          <details id="device-data" class="content-card">
+            <summary>Data stored on your device</summary>
+            <div>
+              <ul class="list">
+                <li>Commitments, people, and IOUs are stored locally in an Isar database.</li>
+                <li>Item photos and attachments are stored as local files on your device.</li>
+                <li>Deleting the app removes all local data permanently.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>Backups</h2>
-        <ul class="list">
-          <li>Manual backup exports are available via Settings &gt; Data &amp; Backup.</li>
-          <li>Backups are exported as JSON files that you control and store.</li>
-        </ul>
+          <details id="permissions" class="content-card">
+            <summary>Permissions</summary>
+            <div>
+              <ul class="list">
+                <li><strong>Notifications:</strong> Used to schedule local reminders for promises and return dates.</li>
+                <li><strong>Media/Photos:</strong> Used to attach item photos. Files stay on your device.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>Advertising and third parties</h2>
-        <ul class="list">
-          <li>Pactora uses Google AdMob banner ads in the free version.</li>
-          <li>Google may collect device identifiers to serve personalized ads unless you opt out.</li>
-          <li>Ads are banner-only and do not interrupt the app flow.</li>
-        </ul>
+          <details id="backups" class="content-card">
+            <summary>Backups</summary>
+            <div>
+              <ul class="list">
+                <li>Manual backup exports are available via Settings &gt; Data &amp; Backup.</li>
+                <li>Backups are exported as JSON files that you control and store.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>Children’s privacy</h2>
-        <p>Pactora is not intended for children under 13.</p>
+          <details id="ads" class="content-card">
+            <summary>Advertising and third parties</summary>
+            <div>
+              <ul class="list">
+                <li>Pactora uses Google AdMob banner ads in the free version.</li>
+                <li>Google may collect device identifiers to serve personalized ads unless you opt out.</li>
+                <li>Ads are banner-only and do not interrupt the app flow.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>Changes to this policy</h2>
-        <p>Updates will be reflected in the app’s About &amp; FAQ screens. No update cadence is specified in the project files.</p>
+          <details id="children" class="content-card">
+            <summary>Children’s privacy</summary>
+            <div>
+              <p>Pactora is not intended for children under 13.</p>
+            </div>
+          </details>
 
-        <h2>Contact</h2>
-        <p>For privacy questions, contact <a href="mailto:sourabh3527@gmail.com">sourabh3527@gmail.com</a>.</p>
-      </section>
+          <details id="changes" class="content-card">
+            <summary>Changes to this policy</summary>
+            <div>
+              <p>Updates will be reflected in the app’s About &amp; FAQ screens. No update cadence is specified in the project files.</p>
+            </div>
+          </details>
+
+          <details id="contact" class="content-card">
+            <summary>Contact</summary>
+            <div>
+              <p>For privacy questions, contact <a href="mailto:sourabh3527@gmail.com">sourabh3527@gmail.com</a>.</p>
+            </div>
+          </details>
+        </section>
+      </div>
     </main>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 
     <footer class="footer">
       <div class="container footer-grid">

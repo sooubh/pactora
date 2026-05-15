@@ -27,54 +27,106 @@
       </div>
     </header>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <main class="container">
-      <section class="page-header">
+      <section class="page-header page-hero">
         <h1>How to Use Pactora</h1>
         <p>A simple guide based on the documented app flow.</p>
+        <div class="page-meta">
+          <span class="pill">Quick start</span>
+          <span class="pill">Step-by-step</span>
+          <span class="pill">Offline workflow</span>
+        </div>
       </section>
 
-      <section class="page-content">
-        <h2>1. Get started</h2>
-        <ul class="list">
-          <li>Open Pactora to the splash screen while the local database initializes.</li>
-          <li>Complete the five-step onboarding walkthrough (Privacy, Promises, Items, Money).</li>
-          <li>Grant notification access if you want reminder alerts.</li>
-        </ul>
+      <div class="page-layout">
+        <aside class="toc">
+          <h2>On this page</h2>
+          <nav>
+            <a href="#start">Get started</a>
+            <a href="#people">Add people</a>
+            <a href="#commitment">Log a commitment</a>
+            <a href="#dashboard">Monitor your dashboard</a>
+            <a href="#history">Search and review history</a>
+            <a href="#protect">Protect your data</a>
+            <a href="#upgrades">Optional upgrades</a>
+          </nav>
+        </aside>
 
-        <h2>2. Add people</h2>
-        <p>Use the People list to add the contacts tied to your commitments. Each person gets a full relationship history.</p>
+        <section class="page-content">
+          <details id="start" class="content-card" open>
+            <summary>1. Get started</summary>
+            <div>
+              <ul class="list">
+                <li>Open Pactora to the splash screen while the local database initializes.</li>
+                <li>Complete the five-step onboarding walkthrough (Privacy, Promises, Items, Money).</li>
+                <li>Grant notification access if you want reminder alerts.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>3. Log a commitment</h2>
-        <ul class="list">
-          <li>Tap the floating action button to open the quick add sheet.</li>
-          <li>Choose Promises, Borrow &amp; Lend, or Money based on what you want to track.</li>
-          <li>Set due dates, priorities, and attachments like photos when needed.</li>
-        </ul>
+          <details id="people" class="content-card">
+            <summary>2. Add people</summary>
+            <div>
+              <p>Use the People list to add the contacts tied to your commitments. Each person gets a full relationship history.</p>
+            </div>
+          </details>
 
-        <h2>4. Monitor your dashboard</h2>
-        <ul class="list">
-          <li>Use the Home dashboard to see Pending, Overdue, Borrowed, and Owed summaries.</li>
-          <li>Review “Due Today” items to take immediate action.</li>
-          <li>Open detail screens to complete, snooze, or share entries.</li>
-        </ul>
+          <details id="commitment" class="content-card">
+            <summary>3. Log a commitment</summary>
+            <div>
+              <ul class="list">
+                <li>Tap the floating action button to open the quick add sheet.</li>
+                <li>Choose Promises, Borrow &amp; Lend, or Money based on what you want to track.</li>
+                <li>Set due dates, priorities, and attachments like photos when needed.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>5. Search and review history</h2>
-        <ul class="list">
-          <li>Use Global Search to find any promise, item, or IOU instantly.</li>
-          <li>Open the Activity Timeline for a chronological history of your actions.</li>
-          <li>Use the Calendar view to scan commitments by date.</li>
-        </ul>
+          <details id="dashboard" class="content-card">
+            <summary>4. Monitor your dashboard</summary>
+            <div>
+              <ul class="list">
+                <li>Use the Home dashboard to see Pending, Overdue, Borrowed, and Owed summaries.</li>
+                <li>Review “Due Today” items to take immediate action.</li>
+                <li>Open detail screens to complete, snooze, or share entries.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>6. Protect your data</h2>
-        <ul class="list">
-          <li>Go to Settings &gt; Data &amp; Backup to export a JSON backup.</li>
-          <li>Import the backup on another device if you need to migrate data.</li>
-        </ul>
+          <details id="history" class="content-card">
+            <summary>5. Search and review history</summary>
+            <div>
+              <ul class="list">
+                <li>Use Global Search to find any promise, item, or IOU instantly.</li>
+                <li>Open the Activity Timeline for a chronological history of your actions.</li>
+                <li>Use the Calendar view to scan commitments by date.</li>
+              </ul>
+            </div>
+          </details>
 
-        <h2>7. Optional upgrades</h2>
-        <p>Pactora Plus removes ads and unlocks custom themes, analytics, and additional notification options.</p>
-      </section>
+          <details id="protect" class="content-card">
+            <summary>6. Protect your data</summary>
+            <div>
+              <ul class="list">
+                <li>Go to Settings &gt; Data &amp; Backup to export a JSON backup.</li>
+                <li>Import the backup on another device if you need to migrate data.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details id="upgrades" class="content-card">
+            <summary>7. Optional upgrades</summary>
+            <div>
+              <p>Pactora Plus removes ads and unlocks custom themes, analytics, and additional notification options.</p>
+            </div>
+          </details>
+        </section>
+      </div>
     </main>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 
     <footer class="footer">
       <div class="container footer-grid">
